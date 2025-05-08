@@ -1,0 +1,26 @@
+#ifndef _PCI_H
+#define _PCI_H
+
+#include "kernel/pci.h"
+
+#define PCI_CLASS_MASS_STORAGE		0x01
+#define PCI_CLASS_NETWORK		0x02
+#define PCI_CLASS_DISPLAY		0x03
+#define PCI_CLASS_MULTIMEDIA		0x04
+#define PCI_CLASS_MEMORY		0x05
+#define PCI_CLASS_BRIDGE		0x06
+#define PCI_CLASS_SIMPLE_COM		0x07
+#define PCI_CLASS_BASE_PERIPHERAL	0x08
+#define PCI_CLASS_INPUT			0x09
+#define PCI_CLASS_DOCKING		0x0A
+#define PCI_CLASS_PROCESSOR		0x0B
+#define PCI_CLASS_SERIAL		0x0C
+#define PCI_CLASS_WIRELESS		0x0D
+#define PCI_CLASS_INTELLIGENT		0x0E
+#define PCI_CLASS_SATELLITE		0x0F
+#define PCI_CLASS_CRYPTO		0x10
+#define PCI_CLASS_SIGNAL_PROC		0x11
+
+void pci_scan_bus(uint8_t bus);
+
+#endif
